@@ -1,13 +1,19 @@
 <template>
   <div>
     <p>Hello world!</p>
+    <p>foo is: {{ foo }}</p>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
   data () {
     return {}
+  },
+  computed: {
+    ...mapGetters(['foo']),
   }
 }
 </script>
