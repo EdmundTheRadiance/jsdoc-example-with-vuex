@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "node_modules/jsdoc-vuejs"
+  ],
+  "source": {
+    "include": ["src/"],
+    "includePattern": "\\.(vue|js)$"
+  },
+  "opts": {
+    "destination": "./docs",
+    "encoding": "utf8"
+  },
+  "jsdoc-vuejs": {
+    "followImports": true
+  }
+}
