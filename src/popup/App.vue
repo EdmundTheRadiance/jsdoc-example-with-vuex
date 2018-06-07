@@ -8,6 +8,9 @@
 <script>
 import { mapGetters } from 'vuex';
 
+/**
+ * @vue
+ */
 export default {
   data () {
     return {}
