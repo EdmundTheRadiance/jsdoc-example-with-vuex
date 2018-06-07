@@ -1,0 +1,37 @@
+{
+  "name": "jsdoc-example-with-vuex",
+  "version": "1.0.0",
+  "description": "A Vue.js web extension",
+  "author": "Hugo Alliaume <kocal@live.fr>",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --hide-modules",
+    "build:dev": "cross-env NODE_ENV=development webpack --hide-modules",
+    "build-zip": "node scripts/build-zip.js",
+    "watch": "npm run build -- --watch",
+    "watch:dev": "cross-env HMR=true npm run build:dev -- --watch"
+  },
+  "dependencies": {
+    "vue": "^2.5.13",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0-beta.47",
+    "@babel/preset-env": "^7.0.0-beta.47",
+    "babel-loader": "8.0.0-beta.3",
+    "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^5.1.6",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^7.0.1",
+    "vue-loader": "^15.2.0",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^4.8.3",
+    "webpack-chrome-extension-reloader": "^0.6.7",
+    "webpack-cli": "^2.1.4",
+    "webpack-shell-plugin": "^0.5.0",
+    "zip-folder": "^1.0.0"
+  }
+}
